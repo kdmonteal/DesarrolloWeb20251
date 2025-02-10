@@ -1,23 +1,66 @@
 <!--Author: Kelly Daniella Marin Montealegre
     Date of creation: 3/Feb/2025 
-    Last modification: 3/Feb/2025 10:45-->
+    Last modification: 10/Feb/2025 9:35-->
 <!DOCTYPE html><!--???-->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--Special characters-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Page 2025</title>
 
     <link rel="icon" type='image/png' href='./src/img/my_icon.png'> <!-- iPhone -->
 
     <!--Css, JS, other-->
+    <!-- Vincular hojas de estilo externa Css (OPCIONAL) -->
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body>
-    <header></header>
-    <section>
-        <h1>Hello 2025!</h1>
+    <header>
+        <h1>Introducci&oacute;n HTML</h1>
+        <p>En este documento se exploran elementos b&aacute;sico de HTML.</p>
+    </header>
+    <hr><!--Lineas-->
+    <!-- Elementos comunes -->
+    <section id="text-elements" name="text-elements">
+        <h2>Etiquetas y atributos comunes</h2>
+        <p>Este es un <strong>ejemplo</strong> de texto en negrita y <em>texto en cursiva</em>.</p>
+        <p>Tambien podemos crear <a href="https://usbcali.edu.co" target="_blank">enlaces</a> a otras paginas.</p>
+        <img width="25%" src="./src/img/bluey-family.png" alt="Bluey Family">
+    </section>
+    <hr><!--Lineas-->
+    <section id="new-elements">
+        <h2>Nuevos elementos en HTML5</h2>
+        <div class="">
+            <span class="">Div y Span, como elementos contenedores</span>
+        </div>
+    </section>
+
+    <!--Video y Audio-->
+    <section id="media-elements">
+        <h2>Video y Audio</h2>
+
+        <!-- Video local -->
+        <!-- <video width="" height="" src="" controls></video> -->
+
+        <!--iFrame from Youtube-->
+        <iframe width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/cef35Fk7YD8?si=cjgnBeiOjEj1Zwa8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="canvas-element">
+        <h2>Canvas</h2>
+        <canvas id="myCanvas" width="500" height="100" style="border: 1px solid #000;">
+            Canvas
+        </canvas>
     </section>
     <footer></footer>
     <!--JS-->
 </body>
+
 </html>
