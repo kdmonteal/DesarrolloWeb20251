@@ -1,0 +1,16 @@
+body{ /* palabras reservadas */
+    background-color: rgb(250, 248, 242);
+}
+
+#div1, #div2 {   /* # elemento con id */
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+.dropStyle{ /* Elemento con clases */
+    background-color: red;
+}

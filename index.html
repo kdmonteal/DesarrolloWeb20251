@@ -14,6 +14,8 @@
     <!--Css, JS, other-->
     <!-- Vincular hojas de estilo externa Css (OPCIONAL) -->
     <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/storage.js"></script>
+    <script src="./src/js/dragAndDrop.js"></script>
 </head>
 
 <body>
@@ -73,6 +75,19 @@
      <section id="web-storage">
         <h2>Web Storage</h2>
 
+        <!--Local-->
+        <input type="text" name="nameLocalS" id="nameLocalS">
+        <button onclick="saveLocal()">Save Local Storage</button>
+        <button onclick="displayLocal()">See content</button>
+        <p id="localOutput"></p>
+        <br><br>
+        <input type="text" name="nameSessionS" id="nameSessionS">
+        <button onclick="saveSession()">Save Session Storage</button>
+        <button onclick="displaySession()">See content</button>
+        <p id="sessionOutput"></p>
+        <br>
+        <!--/////////////-->
+        <br>
         <button onclick="saveToLocalStorage()">Guardar Local Storage</button>
         <button onclick="loadFromLocalStorage()">Cargar desde el Local Storage</button>
 
@@ -90,7 +105,12 @@
                 document.getElementById("storageOutput").innerHTML = data;
             }
         </script>
-
+     </section>
+     <section id="dragAndDrop">
+        <!-- Zona de Soltar -->
+        <div id="div1" class="dropStyle" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <!-- Arrastrar -->
+        <img id="drag1" src="./src/img/bluey-family.png" draggable="true" ondragstart="drag(event)" width="88" >
      </section>
     <footer></footer>
     <!--JS-->
