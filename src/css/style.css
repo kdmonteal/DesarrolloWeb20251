@@ -1,9 +1,13 @@
 body{ /* palabras reservadas */
+    background-image: url('../img/background.jpg');
     background-color: rgb(250, 248, 242);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: fantasy;
 }
 
 #div1, #div2 {   /* # elemento con id */
-    float: left;
+    /*float: left;*/
     width: 100px;
     height: 100px;
     margin: 10px;

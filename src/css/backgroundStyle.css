@@ -1,0 +1,35 @@
+div{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+
+.background-color-ex{
+    background-color: aqua;
+}
+
+.background-img-ex{
+    background-image: url('../img/background.jpg');
+    background-color: aqua;
+}
+
+.background-rep-ex{
+    background-image: url('../img/background.jpg');
+    background-color: aqua;
+    background-repeat: repeat-x;
+}
+
+.background-atta-ex{
+    background-image: url('../img/background.jpg');
+    background-color: aqua;
+    background-attachment: fixed;
+}
+
+.background-pos-ex{
+    background-image: url('../img/background.jpg');
+    background-color: aqua;
+    background-position: center;
+}
